@@ -1,16 +1,12 @@
 <template>
-	<div id="navbar-wrap" class="card-shadow">
-		<div id="navbar">
-			<h2 @click="$router.push('/')">Movie.io</h2>
+	<nav class="navbar navbar-light justify-content-between pt-3" fixed="top" style="background-color: #fff;">
+		<a class="navbar-brand" @click="$router.push('/')">Movie.io</a>
+		<form class="form-inline">
 			<div v-if="$route.path == '/'">
-				<input
-					v-model="search"
-					type="text"
-					placeholder="Find movie..."
-				/>
+				<input class="form-control mr-sm-2" v-model="search" type="Search" placeholder="Find movie..."/>
 			</div>
-		</div>
-	</div>
+		</form>
+	</nav>		
 </template>
 
 <script>
@@ -29,38 +25,5 @@
 </script>
 
 <style lang='scss' scoped>
-	#navbar-wrap {
-		position: fixed;
-		width: 100%;
-		z-index: 9999;
-
-		#navbar {
-			display: flex;
-			padding: 15px;
-			justify-content: space-between;
-			background-color: #a34c01;
-
-			h2 {
-				margin: 0 1rem 0 0;
-				color: white;
-				cursor: pointer;
-			}
-
-			& > div {
-				display: flex;
-				flex-grow: 2;
-				justify-content: flex-end;
-
-				input {
-					width: 20%;
-					border: none;
-					height: 25px;
-					border-radius: 10px;
-					box-sizing: border-box;
-					outline: none;
-					padding: 5px;
-				}
-			}
-		}
-	}
+	
 </style>

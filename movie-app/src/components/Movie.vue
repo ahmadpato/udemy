@@ -2,7 +2,7 @@
 	<div class="movie">
 		<img :src="movie.poster" alt="Movie poster" @click="openDetails" />
 		<div class="description">
-			<div class="basic-info">
+			<div class="basic-info mt-5">
 				<h3>{{ movie.name }}</h3>
 				<span :style="{ 'background-color': getRatingColor() }">{{
 					movie.rating
@@ -57,7 +57,7 @@
 		}
 
 		.description {
-			padding: 1rem 0;
+			// padding: 1rem 0;
 
 			.basic-info {
 				display: flex;
@@ -66,7 +66,7 @@
 				h3 {
 					margin: 0;
 					text-align: left;
-					color: white;
+					color: black;
 				}
 
 				span {

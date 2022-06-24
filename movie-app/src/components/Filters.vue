@@ -1,6 +1,5 @@
 <template>
-	<div id="filters">
-		<h3>Filters</h3>
+	<div id="filters" class="mt-4">
 		<p
 			v-for="(filter, index) in filters"
 			:key="index"
@@ -50,7 +49,7 @@
 <style lang='scss' scoped>
 	#filters {
 		text-align: left;
-		color: rgb(143, 143, 143);
+		color: #ffffff;
 		cursor: pointer;
 
 		p {

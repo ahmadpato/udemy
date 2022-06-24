@@ -140,8 +140,9 @@
 		min-width: 150px;
 		max-width: 150px;
 		flex-grow: 1;
-		background-color: #191c1f;
+		background-color: #727272;
 		justify-content: left;
+		margin-top: -50px;
 
 		& > button {
 			margin-top: 20px;

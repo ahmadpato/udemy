@@ -34,5 +34,7 @@
 		flex-wrap: wrap;
 		flex-grow: 2;
 		justify-content: center;
+		background-color: gainsboro;
+		margin-top: -50px;
 	}
 </style>
